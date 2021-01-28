@@ -6,11 +6,6 @@
 .container{
     display: flex;
     justify-content: center;
-    
-}
-
-#first {
-    margin: 1%;  
 }
 
 .or {
