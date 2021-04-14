@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SIGN IN</title>
+        <link rel="stylesheet" href="login.css">
+        <!-- Bootstrap CSS file -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+    </head>
+
+
+    <body>
+        <div class="container">
+            <div class="column">
+              <div class="col-sm">
+                <h1>Welcome!</h1>
+              </div>
+
+              
+              <form action=""> <!-- when you click Log in, the data you wrote will be sent to the linked file-->
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" class="form-control" id="email1" placeholder="Enter email" name="email">
+                </div>
+                <div class="form-group">
+                  <label for="pwd">Password:</label>
+                  <input type="password" class="form-control" id="pwd1" placeholder="Enter password" name="pswd">
+                </div>
+                <button type="submit" onClick="check()" class="btn btn-primary btn-block">Log in</button>
+              </form>
+
+
+              <div class="col-sm">
+                <p class="or">or</p>
+              </div>
+
+
+              <div class="form-group">
+                <button type="button" class="btn btn-info btn-block">Continue with Facebook</button>
+              </div>
+              <div class="form-group">
+                <button type="button" class="btn btn-info btn-block">Continue with Gmail</button>
+              </div>
+
+
+              <div class="col-sm">
+                <p class="or">or</p>
+              </div>
+
+
+              <div class="col-sm">
+                <p class="or">Sign up</p>
+              </div>
+
+
+              <div class="form-group">
+                <input  class="form-control" id="email2" placeholder="Enter email" name="email">
+              </div>
+              
+
+              <div class="row">
+                <div class="col-sm form-group">
+                  <input type="text" class="form-control" id="firstN" placeholder="Enter first name">
+                </div>
+                <div class="col-sm form-group">
+                  <input type="text" class="form-control" id="lastN" placeholder="Enter last name">
+                </div>
+              </div>
+
+
+              <div class="form-group">
+                <input type="password" class="form-control" id="pwd2" placeholder="Enter password" name="pswd" data-toggle="tooltip" 
+                title="Your password must be between 8 and 30 characters. Your password must contain at least one uppercase, or capital, letter (ex: A, B, etc.) Your password must contain at least one lowercase letter. Your password must contain at least one number digit (ex: 0, 1, 2, 3, etc.)">
+              </div>
+
+
+              <div class="form-group">
+                <input type="password" class="form-control" class="pwd" placeholder="Confirm password" name="pswd">
+              </div>
+
+
+              <div class="dropdown dropright">
+                <button type="button" class="btn btn-secondary dropdown-toggle work" data-toggle="dropdown">
+                  Select your work
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Teacher</a>
+                  <a class="dropdown-item" href="#">Scientist</a>
+                  <a class="dropdown-item" href="#">Carpenter</a>
+                  <a class="dropdown-item" href="#">Engineer</a>
+                  <a class="dropdown-item" href="#">Doctor</a>
+                </div>
+              </div>
+                    
+              
+                <form action="">
+                  <input type="checkbox" id="terms" name="terms" >
+                  <label for="terms"> I accept the Terms of Use and The Privacy Policy</label>
+                </form>
+                <div class="form-group">
+                  <button type="button" onClick="store()" class="btn btn-primary btn-block">Sign up</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!-- JS files: jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <script src="login.js"></script>
+    </body>
+</html>
